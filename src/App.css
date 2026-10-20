@@ -58,8 +58,9 @@ input, textarea { background: white; border: 1px solid var(--line); border-radiu
 
 .simple-song-list { gap: 0 42px; grid-template-columns: repeat(2, minmax(0, 1fr)); margin-top: 0; }
 .song-line { align-items: baseline; border-bottom: 1px solid #d7b7a7; display: flex; gap: 10px; justify-content: space-between; padding: 13px 0; }
-.song-line span { color: var(--ink); font-size: 14px; }
-.song-line small { color: var(--muted); font-size: 10px; text-align: right; }
+.song-line > span { color: var(--cream); display: grid; gap: 3px; }
+.song-line strong { color: var(--cream); font-size: 14px; font-weight: 500; }
+.song-line small { color: #f0c8b8; font-size: 10px; }
 .embedded-form-section { border-top: 1px solid var(--line); margin-top: 58px; padding-top: 34px; }
 .form-heading { margin-bottom: 22px; }
 .form-heading h3 { color: var(--cream); font-size: clamp(28px, 4vw, 40px); line-height: 1.05; }

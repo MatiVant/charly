@@ -47,12 +47,9 @@ export default function App() {
       <main id="inicio">
         <section className="hero-section">
           <div className="hero-copy">
-            <p className="eyebrow"><Sparkles size={15} /> Homenaje colectivo</p>
+            <p className="eyebrow"><Sparkles size={15} /> Puerto Limón</p>
             <h1>No digas nada,<br /><em>Charly cumple 75</em></h1>
-            <p className="hero-text">
-              Estamos preparando un show especial para celebrar los 75 años de Charly.
-              Mirá la lista de canciones y completá el formulario para anotarte.
-            </p>
+            <p className="hero-text">Festejamos los 75 años de Charly en Puerto Limón.</p>
             <a className="primary-link" href="#participar">Ver canciones <ChevronRight size={17} /></a>
           </div>
           <div className="hero-art-wrap">
@@ -61,8 +58,8 @@ export default function App() {
         </section>
 
         <section className="intro-strip">
-          <div><Cake size={20} /><span>Celebramos una vida entera de canciones</span></div>
-          <div><Users size={20} /><span>Sumate al homenaje</span></div>
+          <div><Cake size={20} /><span>Charly cumple 75</span></div>
+          <div><Users size={20} /><span>Festejamos en Puerto Limón</span></div>
         </section>
 
         <section className="form-section" id="participar">
@@ -72,11 +69,10 @@ export default function App() {
             <p>Son canciones posibles para el homenaje, no un repertorio confirmado. Si conocés alguna y querés participar, completá el formulario.</p>
           </div>
 
-          <div className="song-list simple-song-list" aria-label="Lista de canciones del show">
+          <div className="song-list simple-song-list" aria-label="Lista de canciones disponibles">
             {songs.map((song) => (
               <div className="song-line" key={song.title}>
-                <span>{song.title}</span>
-                <small>{song.album}</small>
+                <span><strong>{song.title}</strong><small>{song.album}</small></span>
               </div>
             ))}
           </div>
@@ -99,7 +95,7 @@ export default function App() {
         </section>
       </main>
 
-      <footer className="site-footer"><span>Charly 75</span><span>Una celebración hecha entre todos</span></footer>
+      <footer className="site-footer"><span>Charly 75</span><span>Festejo en Puerto Limón</span></footer>
     </div>
   );
 }
